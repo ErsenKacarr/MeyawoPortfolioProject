@@ -1,0 +1,26 @@
+﻿﻿@model List<MeyawoPortfolio.Models.TblFuture>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/_Layout.cshtml";
+}
+
+<h2>Öne Çıkanlar Sayfası</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Future ID</th>
+        <th>Ad Soyad</th>
+        <th>Ana Başlık</th>
+        <th>Başlık</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.FutureID</td>
+            <td>@item.NameSurname</td>
+            <td>@item.Header</td>
+            <td>@item.Title</td>
+        </tr>
+    }
+</table>
+

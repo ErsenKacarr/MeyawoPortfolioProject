@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "CreateAbout";
+    Layout = "~/Views/AdminLayout/_Layout.cshtml";
+}
+
+<h2>Hakkımda</h2>
+
+<form method="post">
+    <label>Hakkımda</label>
+    <input type="text" class="table table-bordered" name="Title" />
+    <br />
+    <label>Başlık</label>
+    <input type="text" class="table table-bordered" name="Header" />
+    <br />
+    <label>Kendini Tanıtma</label>
+    <textarea rows="4" class="table table-bordered" name="Description"></textarea>
+    <br />
+    <label>Görsel</label>
+    <input type="text" class="table table-bordered" name="ImageUrl" />
+    <br />
+    <button class="btn btn-info">Hakkımda Kaydet</button>
+</form>

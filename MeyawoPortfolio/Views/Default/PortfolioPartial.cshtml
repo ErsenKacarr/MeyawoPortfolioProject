@@ -1,0 +1,26 @@
+﻿@model List<MeyawoPortfolio.Models.TblCategory>
+
+<section class="section" id="portfolio">
+    <div class="container text-center">
+        <h6 class="section-title mb-6">Kategoriler</h6>
+        <div class="row">
+
+            @foreach (var item in Model)
+            {
+                <div class="col-md-2">
+                    <a href="" class="portfolio-card">
+                        <img src=@item.CategoryImageUrl class="portfolio-card-img"
+                             alt="">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h6>@item.CategoryID</h6>
+                                <p class="font-weight-normal">Category: @item.CategoryName</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            }
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,73 @@
+﻿﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+@Html.Partial("/Views/Default/HeadPartial.cshtml")
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    @Html.Partial("/Views/Default/NavbarPartial.cshtml")
+    <!-- End of Page Navbar -->
+    <!-- page header -->
+    @Html.Action("FuturePartial")
+    <!-- end of page header -->
+    <!-- about section -->
+    @Html.Action("AboutPartial")
+    <!-- end of about section -->
+    <!-- service section -->
+    @Html.Action("ServicePartial")
+    <!-- end of service section -->
+
+    <!-- portfolio section -->
+    @Html.Action("PortfolioPartial")
+    <!-- end of portfolio section -->
+
+    <!-- testimonial section -->
+    @Html.Action("TestimonialPartial")
+    <!-- end of testimonial section -->
+
+    <!-- blog section -->
+    @Html.Action("BlogPartial")
+    <!-- end of blog section -->
+
+    <!-- contact section -->
+    @Html.Action("ContactPartial")
+    <!-- end of contact section -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">
+            <p class="mb-0">
+                Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy; <a href="http://www.devcrud.com">DevCRUD</a> Distribution <a href="https://themewagon.com">ThemeWagon</a>
+            </p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+            </div>
+        </footer>
+    </div>
+    <!-- end of page footer -->
+
+    <!-- core  -->
+    <script src="~/Templates/meyawo-1.0.0/assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="~/Templates/meyawo-1.0.0/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="~/Templates/meyawo-1.0.0/assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="~/Templates/meyawo-1.0.0/assets/js/meyawo.js"></script>
+
+</body>
+
+</html>
