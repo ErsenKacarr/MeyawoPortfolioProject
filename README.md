@@ -1,3 +1,11 @@
+#MVCPortfolio
+<br/>
+Bu projem kişinin becerilerini anlatan ve isteyenlere hemen ulaşması için Cv'sini pdf olarak ulaştıran bir portfolio projesidir.
+
+#Genel Bakış
+Projemde ASP.NET Framework,MSSQL,CSS,HTML,MVC Kullanarak oluşturulmuştur.Template kısmını partial Viewlarla parçalara ayıarak kodlarımın kolay okunabilmesini ve projemde ki kod yoğunluğunu azaltmayı amaçladım.
+Veri tabanında ki tabloları DB First yaklaşımı ile projeme entegre ettikten sonra MVC'den yararlanarak kullanıcı arayüzünü oluşturdum. Dashboard kısmında ise kullanıcı için değişen şeyleri grafiğe yansıtarak değişiklikleri kolaylaştırdım.
+
 #Kullanılan Diller
 
 ASP.NET Framework
